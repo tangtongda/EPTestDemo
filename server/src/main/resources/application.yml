@@ -1,0 +1,11 @@
+custom:
+  temperature:
+    http-api:
+      # Get the province code of China
+      province: http://www.weather.com.cn/data/city3jdata/china.html
+      # Get the city code of one certain province,‘10119’ is ‘province code’
+      city: http://www.weather.com.cn/data/city3jdata/provshi/%s.html
+      # Get the county code of one certain city,‘1011904’ is ‘province code + city code’
+      county: http://www.weather.com.cn/data/city3jdata/station/%s.html
+      # Get the weather of one certain county,‘101190401’ is ‘province code + city code + county code.’
+      weather: http://www.weather.com.cn/data/sk/%s.html
